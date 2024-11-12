@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--developer: Sujal Chaudhary (CSAI)-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Rollno(NSUT)</title>
+  <meta name="description" content="Search RollNo for students at NSUT by entering their name. Developed by Sujal Chaudhary.">
+  <meta name="keywords" content="NSUT, RollNo Search, Student Information, Sujal Chaudhary, CSAI">
+  <meta name="author" content="Sujal Chaudhary">
+  <meta property="og:title" content="Search Rollno(NSUT)">
+  <meta property="og:description" content="Search RollNo for students at NSUT by entering their name. Developed by Sujal Chaudhary.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rollno.sujal.info/">
+  <meta property="og:image" content="https://sdrive.blr1.cdn.digitaloceanspaces.com/files/b93178860edd1e46b0db2a0a2ba028d8.png">
+  <meta name="twitter:card" content="https://sdrive.blr1.cdn.digitaloceanspaces.com/files/b93178860edd1e46b0db2a0a2ba028d8.png">
+  <meta name="twitter:title" content="Search Rollno(NSUT)">
+  <meta name="twitter:description" content="Search RollNo for students at NSUT by entering their name. Developed by Sujal Chaudhary.">
+  <meta name="twitter:image" content="https://sdrive.blr1.cdn.digitaloceanspaces.com/files/b93178860edd1e46b0db2a0a2ba028d8.png">
+  <meta name="twitter:creator" content="Sujal Chaudhary">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+
+  <div class="w-full max-w-lg p-8 bg-transparent rounded-lg shadow-lg">
+    <h1 class="text-4xl font-bold mb-2 my-4 text-center text-white">Search for Rollno. (NSUT)</h1>
+    <form id="studentForm" class="p-6 rounded-lg mb-8 bg-transparent shadow-inner">
+      <div class="mb-6">
+        <label for="studentName" class="block text-pink-500 text-sm font-semibold mb-2">Enter Name</label>
+        <input type="text" id="studentName" name="studentName" class="w-full py-2 px-4 rounded-lg bg-transparent text-white border border-gray-600 focus:border-pink-500 focus:ring focus:ring-pink-600 transition duration-300" required>
+      </div>
+      <div class="mb-6">
+        <label for="year" class="block text-pink-500 text-sm font-semibold mb-2">Select Year</label>
+        <select id="year" name="year" class="w-full py-2 px-4 rounded-lg bg-transparent text-white border border-gray-600 focus:ring focus:ring-pink-400 transition duration-300">
+          <option class="text-black bg-transparent" value="2022">2022</option>
+          <option class="text-black bg-transparent" value="2023">2023</option>
+          <option class="text-black bg-transparent" selected value="2024">2024</option>
+
+        </select>
+      </div>
+      <button type="submit" class="w-full bg-blue-800 hover:bg-blue-600 text-white font-bold py-3 rounded-lg shadow-lg transition duration-300">Search</button>
+    </form>
+    <div id="resultsContainer" class="space-y-4">
+  </div>
+    <h3 class="text-center text-pink-500 text-xl mt-6">Developed by <a class="text-blue-400 font-bold" href="#">Sujal Chaudhary<br>Aryan Anand<br>Vishesh Shokeen</a></h3>
+
+  <script src="main.js"></script>
+</body>
+</html>
